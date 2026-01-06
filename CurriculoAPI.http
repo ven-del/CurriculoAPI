@@ -1,0 +1,150 @@
+@CurriculoAPI_HostAddress = http://localhost:5047
+
+
+Accept: application/json
+
+### GET - Listar todas as experiências
+GET {{CurriculoAPI_HostAddress}}/api/curriculo
+
+### =============================================
+### POST - INSERIR NOVAS EXPERIÊNCIAS
+### =============================================
+
+### 1. Digital Gen.AI - GenAI Developer
+POST {{CurriculoAPI_HostAddress}}/api/curriculo
+Content-Type: application/json
+
+{
+    "empresa": "Digital Gen.AI",
+    "cargo": "GenAI Developer",
+    "dataInicio": "2025-08-01",
+    "dataFim": null,
+    "descricao": "Trabalho com desenvolvimento de agentes de IA Generativa, utilizando a API da OpenAI em projetos para vários clientes da empresa e criando automações utilizando a ferramenta n8n. Também desenvolvo soluções web que são solicitadas, aprimorando meu conhecimento como desenvolvedor full stack."
+}
+
+### 2. Infinite Gold - Jr Full Stack Web Developer
+POST {{CurriculoAPI_HostAddress}}/api/curriculo
+Content-Type: application/json
+
+{
+    "empresa": "Infinite Gold",
+    "cargo": "Jr Full Stack Web Developer",
+    "dataInicio": "2025-07-01",
+    "dataFim": "2025-07-31",
+    "descricao": "Trabalhei colaborando com o código do projeto MyNumerologyMap, tanto para o frontend quanto para o backend, sendo responsável por implementações de checkout e integração com provedores de pagamento online."
+}
+
+### 3. Accenture Brasil - Security Delivery Associate
+POST {{CurriculoAPI_HostAddress}}/api/curriculo
+Content-Type: application/json
+
+{
+    "empresa": "Accenture Brasil",
+    "cargo": "Security Delivery Associate",
+    "dataInicio": "2023-09-01",
+    "dataFim": "2024-02-28",
+    "descricao": "Atuei na Accenture gerenciando acessos e a operação de plataformas críticas de gestão de vulnerabilidades e cyber resilience, com milhares de ativos sob minha responsabilidade. Liderei a abertura, triagem e gerenciamento de chamados via ferramentas ITSM, propondo melhorias que tornaram os fluxos mais ágeis e confiáveis. Analisava e validava possíveis bugs relatados, garantindo a qualidade e estabilidade dos sistemas internos e externos."
+}
+
+### 4. Morphus - Analista de suporte de sistemas
+POST {{CurriculoAPI_HostAddress}}/api/curriculo
+Content-Type: application/json
+
+{
+    "empresa": "Morphus Segurança da Informação",
+    "cargo": "Analista de suporte de sistemas",
+    "dataInicio": "2022-02-01",
+    "dataFim": "2023-09-30",
+    "descricao": "Na Morphus, atuei na sustentação de sistemas de segurança da informação e no suporte a clientes internos e externos. Gerenciei tickets críticos, priorizando e solucionando demandas que asseguraram a continuidade de operações em ambientes sensíveis. Contribuí com sugestões de melhorias em fluxos de atendimento e automação de tarefas rotineiras, reduzindo o tempo de resposta em até 20%."
+}
+
+### 5. Morphus - Ticket Manager
+POST {{CurriculoAPI_HostAddress}}/api/curriculo
+Content-Type: application/json
+
+{
+    "empresa": "Morphus Segurança da Informação",
+    "cargo": "Ticket Manager",
+    "dataInicio": "2021-01-01",
+    "dataFim": "2022-05-31",
+    "descricao": "Como Ticket Manager, fui responsável pela coordenação do ciclo de vida dos chamados em ambiente de segurança da informação. Trabalhei diretamente com análise, categorização e priorização de incidentes, garantindo a rastreabilidade e solução rápida de problemas. Implementei práticas que melhoraram a organização dos atendimentos e contribuí para otimizar a experiência do cliente final."
+}
+
+### 6. DKUNC - Analista de suporte de TI
+POST {{CurriculoAPI_HostAddress}}/api/curriculo
+Content-Type: application/json
+
+{
+    "empresa": "DKUNC SERVIÇOS DE TI",
+    "cargo": "Analista de suporte de TI",
+    "dataInicio": "2020-02-01",
+    "dataFim": "2020-12-31",
+    "descricao": "Atuando como analista de suporte terceirizado para a Companhia Siderúrgica do Pecém (CSP), fui responsável pela análise e resolução de chamados utilizando a ferramenta OTRS, em regime de plantão 12x36. Resolvi incidentes críticos em sistemas de produção e apoio administrativo, contribuindo para a alta disponibilidade dos serviços."
+}
+
+### 7. Grupo Edson Queiroz - Estagiário de TI
+POST {{CurriculoAPI_HostAddress}}/api/curriculo
+Content-Type: application/json
+
+{
+    "empresa": "Grupo Edson Queiroz",
+    "cargo": "Estagiário de TI",
+    "dataInicio": "2019-05-01",
+    "dataFim": "2020-02-28",
+    "descricao": "Durante meu estágio na holding do Grupo Edson Queiroz, atuei no suporte técnico a usuários e na manutenção de sistemas internos. Apoiei projetos de atualização de infraestrutura e implementei práticas de documentação de processos, melhorando a comunicação entre áreas técnicas e administrativas."
+}
+
+### 8. Sindiônibus - Auxiliar Administrativo
+POST {{CurriculoAPI_HostAddress}}/api/curriculo
+Content-Type: application/json
+
+{
+    "empresa": "Sindiônibus",
+    "cargo": "Auxiliar Administrativo de Atendimento ao Público",
+    "dataInicio": "2016-09-01",
+    "dataFim": "2018-06-30",
+    "descricao": "Liderando o atendimento do Bilhete Único Metropolitano na unidade Vapt Vupt Messejana, coordenei estagiários e aprendizes, garantindo a eficiência operacional do setor. Participei ativamente na criação de relatórios gerenciais e na comunicação de informações aos cidadãos, sempre focado na clareza e qualidade do serviço público."
+}
+
+### =============================================
+### PUT - EDITAR EXPERIÊNCIAS EXISTENTES (IDs 1, 2 e 3)
+### Ajuste os IDs conforme os registros existentes no banco
+### =============================================
+
+### Editar experiência ID 1
+PUT {{CurriculoAPI_HostAddress}}/api/curriculo/1
+Content-Type: application/json
+
+{
+    "empresa": "Digital Gen.AI",
+    "cargo": "GenAI Developer",
+    "dataInicio": "2025-08-01",
+    "dataFim": null,
+    "descricao": "Trabalho com desenvolvimento de agentes de IA Generativa, utilizando a API da OpenAI em projetos para vários clientes da empresa e criando automações utilizando a ferramenta n8n. Também desenvolvo soluções web que são solicitadas, aprimorando meu conhecimento como desenvolvedor full stack."
+}
+
+### Editar experiência ID 2
+PUT {{CurriculoAPI_HostAddress}}/api/curriculo/2
+Content-Type: application/json
+
+{
+    "empresa": "Infinite Gold",
+    "cargo": "Jr Full Stack Web Developer",
+    "dataInicio": "2025-07-01",
+    "dataFim": "2025-07-31",
+    "descricao": "Trabalhei colaborando com o código do projeto MyNumerologyMap, tanto para o frontend quanto para o backend, sendo responsável por implementações de checkout e integração com provedores de pagamento online."
+}
+
+### Editar experiência ID 3
+PUT {{CurriculoAPI_HostAddress}}/api/curriculo/3
+Content-Type: application/json
+
+{
+    "empresa": "Accenture Brasil",
+    "cargo": "Security Delivery Associate",
+    "dataInicio": "2023-09-01",
+    "dataFim": "2024-02-28",
+    "descricao": "Atuei na Accenture gerenciando acessos e a operação de plataformas críticas de gestão de vulnerabilidades e cyber resilience, com milhares de ativos sob minha responsabilidade. Liderei a abertura, triagem e gerenciamento de chamados via ferramentas ITSM, propondo melhorias que tornaram os fluxos mais ágeis e confiáveis. Analisava e validava possíveis bugs relatados, garantindo a qualidade e estabilidade dos sistemas internos e externos."
+}
+
+###
