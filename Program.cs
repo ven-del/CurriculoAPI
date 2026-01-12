@@ -6,10 +6,10 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddCors(options =>
 {
-    options.AddPolicy("PermitirTudo",
+    options.AddPolicy("PermitirVercelELocal",
         policy =>
         {
-            policy.AllowAnyOrigin()  
+            policy.policy.WithOrigins("http://localhost:5173", "https://labce-curriculo.vercel.app")  
                   .AllowAnyHeader()
                   .AllowAnyMethod(); 
         });
