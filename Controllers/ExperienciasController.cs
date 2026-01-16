@@ -7,11 +7,11 @@ namespace CurriculoAPI.Controllers;
 
 [ApiController]
 [Route("api/[controller]")]
-public class CurriculoController : ControllerBase
+public class ExperienciasController : ControllerBase
 {
     private readonly AppDbContext _context;
 
-    public CurriculoController(AppDbContext context)
+    public ExperienciasController(AppDbContext context)
     {
         _context = context;
     }
