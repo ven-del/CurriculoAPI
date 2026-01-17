@@ -42,7 +42,11 @@ public class ExperienciasController : ControllerBase
             Cargo = dto.Cargo,
             DataInicio = dto.DataInicio,
             DataFim = dto.DataFim,
-            Descricao = dto.Descricao
+            Descricao = dto.Descricao,
+            CargoEn = dto.CargoEn,
+            DescricaoEn = dto.DescricaoEn,
+            CargoEs = dto.CargoEs,
+            DescricaoEs = dto.DescricaoEs
         };
 
         _context.Experiencias.Add(experiencia);
@@ -70,6 +74,10 @@ public class ExperienciasController : ControllerBase
         experiencia.DataInicio = dto.DataInicio;
         experiencia.DataFim = dto.DataFim;
         experiencia.Descricao = dto.Descricao;
+        experiencia.CargoEn = dto.CargoEn;
+        experiencia.DescricaoEn = dto.DescricaoEn;
+        experiencia.CargoEs = dto.CargoEs;
+        experiencia.DescricaoEs = dto.DescricaoEs;
 
         _context.SaveChanges();
 

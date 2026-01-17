@@ -18,4 +18,16 @@ public class CreateExperienciaDto
 
     [StringLength(500)]
     public string Descricao { get; set; } = string.Empty;
+
+    [StringLength(100)]
+    public string CargoEn { get; set; } = string.Empty;
+
+    [StringLength(500)]
+    public string DescricaoEn { get; set; } = string.Empty;
+
+    [StringLength(100)]
+    public string CargoEs { get; set; } = string.Empty;
+
+    [StringLength(500)]
+    public string DescricaoEs { get; set; } = string.Empty;
 }

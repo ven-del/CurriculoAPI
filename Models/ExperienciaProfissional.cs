@@ -8,4 +8,8 @@ public class ExperienciaProfissional
     public DateOnly DataInicio { get; set; }
     public DateOnly? DataFim { get; set; }
     public string Descricao { get; set; } = string.Empty;
+    public string CargoEn { get; set; } = string.Empty;
+    public string DescricaoEn { get; set; } = string.Empty;
+    public string CargoEs { get; set; } = string.Empty;
+    public string DescricaoEs { get; set; } = string.Empty;
 }
