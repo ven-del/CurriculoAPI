@@ -19,12 +19,12 @@ public class ExperienciasController : ControllerBase
     [HttpGet]
     public IActionResult GetExperiencias()
     {
-        return Ok(_context.Experiencias.OrderByDescending(e => e.DataInicio).ToList());
+        return Ok(_context.ExperienciasProfissionais.OrderByDescending(e => e.DataInicio).ToList());
     }
     [HttpGet("{id}")]
     public IActionResult GetExperienciaById(int id)
     {
-        var experiencia = _context.Experiencias.ToList().FirstOrDefault(e => e.Id == id);
+        var experiencia = _context.ExperienciasProfissionais.ToList().FirstOrDefault(e => e.Id == id);
         if (experiencia == null) { return NotFound(); }
         return Ok(experiencia);
     }
@@ -49,7 +49,7 @@ public class ExperienciasController : ControllerBase
             DescricaoEs = dto.DescricaoEs
         };
 
-        _context.Experiencias.Add(experiencia);
+        _context.ExperienciasProfissionais.Add(experiencia);
         _context.SaveChanges();
 
         return CreatedAtAction(nameof(GetExperienciaById), new { id = experiencia.Id }, experiencia);
@@ -63,7 +63,7 @@ public class ExperienciasController : ControllerBase
             return BadRequest(ModelState);
         }
 
-        var experiencia = _context.Experiencias.FirstOrDefault(e => e.Id == id);
+        var experiencia = _context.ExperienciasProfissionais.FirstOrDefault(e => e.Id == id);
         if (experiencia == null)
         {
             return NotFound();
