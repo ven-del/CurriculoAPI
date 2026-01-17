@@ -17,7 +17,8 @@ builder.Services.AddCors(options =>
 
 builder.Services.AddDbContext<AppDbContext>(options =>
 {
-    options.UseNpgsql("Host=localhost;Database=curriculo;Username=dev;Password=dev123");
+    var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
+    options.UseNpgsql(connectionString);
 });
 
 builder.Services.AddControllers();

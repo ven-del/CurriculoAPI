@@ -1,0 +1,48 @@
+# Diretórios de build e binários
+bin/
+obj/
+out/
+
+# Arquivos do Visual Studio
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Arquivos do Rider
+.idea/
+*.sln.iml
+
+# Arquivos de teste
+TestResults/
+
+# Arquivos do NuGet
+*.nupkg
+*.snupkg
+packages/
+.nuget/
+
+# Arquivos do Docker
+Dockerfile
+.dockerignore
+docker-compose*.yml
+
+# Git
+.git/
+.gitignore
+.gitattributes
+
+# Documentação e outros
+*.md
+LICENSE
+
+# Arquivos de ambiente
+.env
+.env.local
+
+# Logs
+logs/
+*.log
+
+global.json
