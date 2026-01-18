@@ -48,6 +48,16 @@ CREATE TABLE "Curiosidades" (
     "DescricaoEs" TEXT
 );
 
+CREATE TABLE "Educacoes" (
+    "Id" SERIAL PRIMARY KEY,
+    "Curso" VARCHAR(200),
+    "CursoEn" VARCHAR(200),
+    "CursoEs" VARCHAR(200),
+    "Instituicao" VARCHAR(200),
+    "DataInicio" DATE,
+    "DataFim" DATE
+);
+
 -- Inserção dos Dados
 
 INSERT INTO "InformacoesPessoais" ("NomeCompleto", "Profissao", "ProfissaoEn", "ProfissaoEs", "Email", "LinkLinkedin", "LinkGitHub", "Telefone", "Localizacao", "Descricao", "DescricaoEn", "DescricaoEs")
@@ -64,7 +74,7 @@ VALUES
 
 INSERT INTO "Hardskills" ("NomeHardskill", "Nivel")
 VALUES 
-('Desenvolvimento Web', 8),
+('Unreal Engine Blueprint / Unity', 8),
 ('HTML, CSS, Javascript', 8),
 ('React.js / Node.js / Express', 7),
 ('Python / Django', 7),
@@ -94,3 +104,9 @@ VALUES
 ('Amo jogos de luta, inclusive tenho um controle arcade pra jogar Street Fighter 6 e Tekken 8', 'I love fighting games, I even have an arcade controller to play Street Fighter 6 and Tekken 8', 'Amo los juegos de lucha, incluso tengo un control arcade para jugar Street Fighter 6 y Tekken 8'),
 ('Meu sonho é ser desenvolvedor de jogos e pretendo fazer um jogo por conta própria e upar na Steam. Já possuo dois jogos no currículo.', 'My dream is to be a game developer and I plan to make a game on my own and upload it to Steam. I already have two games under my belt.', 'Mi sueño es ser desarrollador de juegos y planeo hacer un juego por mi cuenta y subirlo a Steam. Ya tengo dos juegos en mi currículum.'),
 ('Tenho um Canal na Twitch, mas como o Pc não aguenta mais fazer lives, tá em hiato por um tempo', 'I have a Twitch Channel, but since my PC can''t handle streaming anymore, it''s on hiatus for a while', 'Tengo un Canal en Twitch, pero como la PC ya no soporta hacer lives, está en pausa por un tiempo');
+
+INSERT INTO "Educacoes" ("Curso", "CursoEn", "CursoEs", "Instituicao", "DataInicio", "DataFim")
+VALUES 
+('Desenvolvimento Full Stack', 'Full Stack Development', 'Desarrollo Full Stack', 'IEL - Geração Tech 2.0', '2025-03-01', '2025-06-30'),
+('Formação Python Web Development', 'Python Web Development Training', 'Formación Python Web Development', 'Alura', '2022-03-01', '2022-08-31'),
+('Análise e Desenvolvimento de Sistemas', 'Systems Analysis and Development', 'Análisis y Desarrollo de Sistemas', 'UNIFOR', '2017-08-01', '2021-06-30');
