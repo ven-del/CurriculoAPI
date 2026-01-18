@@ -12,5 +12,8 @@ public class InformacaoPessoal
     public string LinkGitHub { get; set; } = string.Empty;
     public string Telefone { get; set; } = string.Empty;
     public string Localizacao { get; set; } = string.Empty;
+    public string Descricao { get; set; } = string.Empty;
+    public string DescricaoEn { get; set; } = string.Empty;
+    public string DescricaoEs { get; set; } = string.Empty;
 
 }

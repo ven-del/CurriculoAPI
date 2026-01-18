@@ -37,4 +37,13 @@ public class UpdateInformacaoPessoalDto
 
     [StringLength(150)]
     public string Localizacao { get; set; } = string.Empty;
+
+    [StringLength(2000)]
+    public string Descricao { get; set; } = string.Empty;
+
+    [StringLength(2000)]
+    public string DescricaoEn { get; set; } = string.Empty;
+
+    [StringLength(2000)]
+    public string DescricaoEs { get; set; } = string.Empty;
 }

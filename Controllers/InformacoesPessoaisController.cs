@@ -44,7 +44,10 @@ public class InformacoesPessoaisController : ControllerBase
             LinkLinkedin = dto.LinkLinkedin,
             LinkGitHub = dto.LinkGitHub,
             Telefone = dto.Telefone,
-            Localizacao = dto.Localizacao
+            Localizacao = dto.Localizacao,
+            Descricao = dto.Descricao,
+            DescricaoEn = dto.DescricaoEn,
+            DescricaoEs = dto.DescricaoEs
         };
 
         _context.InformacoesPessoais.Add(informacaoPessoal);
@@ -75,6 +78,9 @@ public class InformacoesPessoaisController : ControllerBase
         informacao.LinkGitHub = dto.LinkGitHub;
         informacao.Telefone = dto.Telefone;
         informacao.Localizacao = dto.Localizacao;
+        informacao.Descricao = dto.Descricao;
+        informacao.DescricaoEn = dto.DescricaoEn;
+        informacao.DescricaoEs = dto.DescricaoEs;
 
         await _context.SaveChangesAsync();
 
