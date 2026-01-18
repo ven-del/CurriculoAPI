@@ -21,24 +21,24 @@ public class CuriosidadesController : ControllerBase
         var curiosidades = await _context.Curiosidades.AsNoTracking().ToListAsync();
         return Ok(curiosidades);
     }
-    [HttpPost]
-    public async Task<ActionResult<Curiosidade>> Post(CreateCuriosidadeDto dto)
-    {
-        if (!ModelState.IsValid)
-        {
-            return BadRequest(ModelState);
-        }
+    // [HttpPost]
+    // public async Task<ActionResult<Curiosidade>> Post(CreateCuriosidadeDto dto)
+    // {
+    //     if (!ModelState.IsValid)
+    //     {
+    //         return BadRequest(ModelState);
+    //     }
 
-        var curiosidade = new Curiosidade
-        {
-            Descricao = dto.Descricao,
-            DescricaoEn = dto.DescricaoEn,
-            DescricaoEs = dto.DescricaoEs
-        };
+    //     var curiosidade = new Curiosidade
+    //     {
+    //         Descricao = dto.Descricao,
+    //         DescricaoEn = dto.DescricaoEn,
+    //         DescricaoEs = dto.DescricaoEs
+    //     };
 
-        _context.Curiosidades.Add(curiosidade);
-        await _context.SaveChangesAsync();
+    //     _context.Curiosidades.Add(curiosidade);
+    //     await _context.SaveChangesAsync();
         
-        return Ok(curiosidade);
-    }
+    //     return Ok(curiosidade);
+    // }
 }

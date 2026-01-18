@@ -21,25 +21,25 @@ public class SoftskillsController : ControllerBase
         var softskills = await _context.Softskills.AsNoTracking().ToListAsync();
         return Ok(softskills);
     }
-    [HttpPost]
-    public async Task<ActionResult<Softskill>> Post(CreateSoftskillDto dto)
-    {
-        if (!ModelState.IsValid)
-        {
-            return BadRequest(ModelState);
-        }
+    // [HttpPost]
+    // public async Task<ActionResult<Softskill>> Post(CreateSoftskillDto dto)
+    // {
+    //     if (!ModelState.IsValid)
+    //     {
+    //         return BadRequest(ModelState);
+    //     }
 
-        var softskill = new Softskill
-        {
-            NomeSoftskill = dto.NomeSoftskill,
-            NomeSoftskillEn = dto.NomeSoftskillEn,
-            NomeSoftskillEs = dto.NomeSoftskillEs,
-            Nivel = dto.Nivel
-        };
+    //     var softskill = new Softskill
+    //     {
+    //         NomeSoftskill = dto.NomeSoftskill,
+    //         NomeSoftskillEn = dto.NomeSoftskillEn,
+    //         NomeSoftskillEs = dto.NomeSoftskillEs,
+    //         Nivel = dto.Nivel
+    //     };
 
-        _context.Softskills.Add(softskill);
-        await _context.SaveChangesAsync();
+    //     _context.Softskills.Add(softskill);
+    //     await _context.SaveChangesAsync();
         
-        return Ok(softskill);
-    }
+    //     return Ok(softskill);
+    // }
 }

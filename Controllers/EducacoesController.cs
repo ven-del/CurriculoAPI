@@ -21,11 +21,11 @@ public class EducacoesController : ControllerBase
         return Ok(_context.Educacoes.OrderByDescending(e => e.DataInicio).ToList());
     }
 
-    [HttpGet("{id}")]
-    public IActionResult GetEducacaoById(int id)
-    {
-        var educacao = _context.Educacoes.FirstOrDefault(e => e.Id == id);
-        if (educacao == null) { return NotFound(); }
-        return Ok(educacao);
-    }
+    // [HttpGet("{id}")]
+    // public IActionResult GetEducacaoById(int id)
+    // {
+    //     var educacao = _context.Educacoes.FirstOrDefault(e => e.Id == id);
+    //     if (educacao == null) { return NotFound(); }
+    //     return Ok(educacao);
+    // }
 }

@@ -21,23 +21,23 @@ public class HardskillsController : ControllerBase
         var hardskills = await _context.Hardskills.AsNoTracking().ToListAsync();
         return Ok(hardskills);
     }
-    [HttpPost]
-    public async Task<ActionResult<Hardskill>> Post(CreateHardskillDto dto)
-    {
-        if (!ModelState.IsValid)
-        {
-            return BadRequest(ModelState);
-        }
+    // [HttpPost]
+    // public async Task<ActionResult<Hardskill>> Post(CreateHardskillDto dto)
+    // {
+    //     if (!ModelState.IsValid)
+    //     {
+    //         return BadRequest(ModelState);
+    //     }
 
-        var hardskill = new Hardskill
-        {
-            NomeHardskill = dto.NomeHardskill,
-            Nivel = dto.Nivel
-        };
+    //     var hardskill = new Hardskill
+    //     {
+    //         NomeHardskill = dto.NomeHardskill,
+    //         Nivel = dto.Nivel
+    //     };
 
-        _context.Hardskills.Add(hardskill);
-        await _context.SaveChangesAsync();
+    //     _context.Hardskills.Add(hardskill);
+    //     await _context.SaveChangesAsync();
         
-        return Ok(hardskill);
-    }
+    //     return Ok(hardskill);
+    // }
 }
