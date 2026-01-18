@@ -41,12 +41,10 @@ public class InformacoesPessoaisController : ControllerBase
             ProfissaoEn = dto.ProfissaoEn,
             ProfissaoEs = dto.ProfissaoEs,
             Email = dto.Email,
-            linkLinkedin = dto.LinkLinkedin,
-            linkGitHub = dto.LinkGitHub,
+            LinkLinkedin = dto.LinkLinkedin,
+            LinkGitHub = dto.LinkGitHub,
             Telefone = dto.Telefone,
-            Localizacao = dto.Localizacao,
-            FotoPerfil = dto.FotoPerfil,
-            FotoAvatar = dto.FotoAvatar
+            Localizacao = dto.Localizacao
         };
 
         _context.InformacoesPessoais.Add(informacaoPessoal);
@@ -73,12 +71,10 @@ public class InformacoesPessoaisController : ControllerBase
         informacao.ProfissaoEn = dto.ProfissaoEn;
         informacao.ProfissaoEs = dto.ProfissaoEs;
         informacao.Email = dto.Email;
-        informacao.linkLinkedin = dto.LinkLinkedin;
-        informacao.linkGitHub = dto.LinkGitHub;
+        informacao.LinkLinkedin = dto.LinkLinkedin;
+        informacao.LinkGitHub = dto.LinkGitHub;
         informacao.Telefone = dto.Telefone;
         informacao.Localizacao = dto.Localizacao;
-        informacao.FotoPerfil = dto.FotoPerfil;
-        informacao.FotoAvatar = dto.FotoAvatar;
 
         await _context.SaveChangesAsync();
 

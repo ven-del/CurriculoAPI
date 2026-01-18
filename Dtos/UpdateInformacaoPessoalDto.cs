@@ -37,8 +37,4 @@ public class UpdateInformacaoPessoalDto
 
     [StringLength(150)]
     public string Localizacao { get; set; } = string.Empty;
-
-    public byte[]? FotoPerfil { get; set; }
-
-    public byte[]? FotoAvatar { get; set; }
 }
