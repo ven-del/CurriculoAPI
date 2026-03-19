@@ -65,7 +65,8 @@ VALUES ('Wendell Pereira', 'Desenvolvedor Full Stack', 'Full Stack Developer', '
 
 INSERT INTO "ExperienciasProfissionais" ("Cargo", "CargoEn", "CargoEs", "Empresa", "DataInicio", "DataFim", "Descricao", "DescricaoEn", "DescricaoEs")
 VALUES 
-('Jr Full Stack GenAI Developer', 'Jr Full Stack GenAI Developer', 'Desarrollador Jr Full Stack GenAI', 'Digital GenAI', '2025-08-01', NULL, 'Criação de assistentes personalizados de IA generativa para empresas de diversos setores, utilizando tecnologias como GPT-4, APIs de NLP e frameworks de desenvolvimento web modernos. Responsável por desenvolver soluções que atendam às necessidades específicas dos clientes, integrando IA generativa em suas operações diárias.', 'Creation of personalized generative AI assistants for companies in various sectors, using technologies such as GPT-4, NLP APIs, and modern web development frameworks. Responsible for developing solutions that meet the specific needs of clients, integrating generative AI into their daily operations.', 'Creación de asistentes personalizados de IA generativa para empresas de diversos sectores, utilizando tecnologías como GPT-4, APIs de NLP y frameworks de desarrollo web modernos. Responsable de desarrollar soluciones que satisfagan las necesidades específicas de los clientes, integrando IA generativa en sus operaciones diarias.'),
+('Desenvolvedor Full Stack Pleno', 'Mid-Level Full Stack Developer', 'Desarrollador Full Stack Pleno', 'Deway', '2026-03-02', NULL, 'Desenvolvimento de soluções full stack utilizando tecnologias modernas e boas práticas de desenvolvimento. Atuação em projetos que envolvem tanto frontend quanto backend, com foco em qualidade de código e arquitetura escalável.', 'Development of full stack solutions using modern technologies and development best practices. Working on projects involving both frontend and backend, with focus on code quality and scalable architecture.', 'Desarrollo de soluciones full stack utilizando tecnologías modernas y buenas prácticas de desarrollo. Actuación en proyectos que involucran tanto frontend como backend, con enfoque en calidad de código y arquitectura escalable.'),
+('Jr Full Stack GenAI Developer', 'Jr Full Stack GenAI Developer', 'Desarrollador Jr Full Stack GenAI', 'Digital GenAI', '2025-08-01', '2026-02-27', 'Criação de assistentes personalizados de IA generativa para empresas de diversos setores, utilizando tecnologias como GPT-4, APIs de NLP e frameworks de desenvolvimento web modernos. Responsável por desenvolver soluções que atendam às necessidades específicas dos clientes, integrando IA generativa em suas operações diárias.', 'Creation of personalized generative AI assistants for companies in various sectors, using technologies such as GPT-4, NLP APIs, and modern web development frameworks. Responsible for developing solutions that meet the specific needs of clients, integrating generative AI into their daily operations.', 'Creación de asistentes personalizados de IA generativa para empresas de diversos sectores, utilizando tecnologías como GPT-4, APIs de NLP y frameworks de desarrollo web modernos. Responsable de desarrollar soluciones que satisfagan las necesidades específicas de los clientes, integrando IA generativa en sus operaciones diarias.'),
 ('Jr Full Stack Web Developer', 'Jr Full Stack Web Developer', 'Desarrollador Jr Full Stack Web', 'Inifite Gold', '2025-07-01', '2025-07-31', 'Trabalhei colaborando com o código do projeto MyNumerologyMap, tanto para o frontend quanto para o backend, sendo responsável por implementações de checkout e integração com provedores de pagamento online.', 'I worked collaborating on the MyNumerologyMap project code, for both frontend and backend, being responsible for checkout implementations and integration with online payment providers.', 'Trabajé colaborando con el código del proyecto MyNumerologyMap, tanto para el frontend como para el backend, siendo responsable de las implementaciones de checkout e integración con proveedores de pago online.'),
 ('Analista de Suporte a Sistemas', 'Systems Support Analyst', 'Analista de Soporte a Sistemas', 'Accenture', '2022-02-01', '2024-02-29', 'Fui responsável pela gestão de acesso das equipes e dos clientes a sistemas internos de gestão de vulnerabilidades, SOAR e cyber resilience, sendo que alguns destes possuíam por volta de uma centena de milhar de ativos registrados. Também propunha melhorias e alterações para nossos sistemas, realizava a frente de contato com os clientes e também atuava como ticket manager.', 'I was responsible for managing team and client access to internal vulnerability management, SOAR, and cyber resilience systems, some of which had around a hundred thousand registered assets. I also proposed improvements and changes to our systems, handled client communication, and acted as ticket manager.', 'Fui responsable de la gestión de acceso de los equipos y clientes a sistemas internos de gestión de vulnerabilidades, SOAR y cyber resilience, siendo que algunos de estos tenían alrededor de un centenar de miles de activos registrados. También proponía mejoras y cambios para nuestros sistemas, realizaba el contacto con los clientes y también actuaba como ticket manager.'),
 ('Ticket Manager', 'Ticket Manager', 'Ticket Manager', 'Morphus Segurança da Informação', '2021-01-01', '2022-02-28', 'Atuei como ponto focal de contato com os clientes externos e internos, realizando a resolução de demandas que estavam em meu escopo e escalonando as que não estavam. Também gerava relatórios com o Power BI e ministrava treinamentos para o acesso à ferramenta de ITSM utilizada internamente.', 'I acted as the focal point of contact with external and internal clients, resolving demands within my scope and escalating those that weren''t. I also generated reports with Power BI and conducted training sessions for accessing the ITSM tool used internally.', 'Actué como punto focal de contacto con los clientes externos e internos, realizando la resolución de demandas que estaban en mi alcance y escalando las que no lo estaban. También generaba informes con Power BI y impartía capacitaciones para el acceso a la herramienta de ITSM utilizada internamente.'),
@@ -83,7 +84,15 @@ VALUES
 ('Linux Bash', 6),
 ('C# / .NET', 7),        
 ('RESTful API', 8),      
-('Docker', 7);           
+('Docker', 7),
+('LangChain', 7),
+('LangSmith', 7),
+('HuggingFace', 7),
+('Generative AI', 8),
+('Git Flow', 8),
+('Hadoop', 6),
+('Airflow', 6),
+('PyTorch', 7);           
 
 INSERT INTO "Softskills" ("NomeSoftskill", "NomeSoftskillEn", "NomeSoftskillEs", "Nivel")
 VALUES 
@@ -92,7 +101,12 @@ VALUES
 ('Resolução de Problemas', 'Problem Solving', 'Resolución de Problemas', 9),
 ('Resiliência', 'Resilience', 'Resiliencia', 9),
 ('Trabalho em Equipe', 'Teamwork', 'Trabajo en Equipo', 9),
-('Foco em Resultados', 'Results Oriented', 'Enfoque en Resultados', 8);
+('Foco em Resultados', 'Results Oriented', 'Enfoque en Resultados', 8),
+('Review e Boas Práticas de Código', 'Code Review and Best Practices', 'Revisión y Buenas Prácticas de Código', 8),
+('Tutoria', 'Tutoring', 'Tutoría', 8),
+('Mentoria', 'Mentoring', 'Mentoría', 8),
+('Lessionamento', 'Teaching', 'Enseñanza', 8),
+('Liderança', 'Leadership', 'Liderazgo', 8);
 
 INSERT INTO "Curiosidades" ("Descricao", "DescricaoEn", "DescricaoEs")
 VALUES 
